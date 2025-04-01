@@ -68,4 +68,4 @@ str_var = "This is my python code."
 # 사용자로부터 입력받아 + 1 해서 출력
 text = input("숫자를 입력해주세요.") # input 받는 값은 문자열임
 num = int(text) + 1
-print(f"입력받은 숫자는 {text}이고 변환된 숫자는 {num}입니다.")
+print(f"입력받은 숫자는 {text}이고 변환된 숫자는 {num}입니다.") 
