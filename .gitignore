@@ -31,3 +31,5 @@ instance/
 # OS 관련 임시 파일
 .DS_Store
 Thumbs.db
+
+API_KEY.txt
