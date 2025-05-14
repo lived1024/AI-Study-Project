@@ -12,6 +12,7 @@ sdist/
 wheels/
 env/
 venv/
+.venv/
 ENV
 .env
 *.log
@@ -33,3 +34,12 @@ instance/
 Thumbs.db
 
 API_KEY.txt
+
+# 오디오/비디오 파일
+speech_output*.mp3
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 백업 파일
+*.bak
