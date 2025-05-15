@@ -30,7 +30,7 @@ translation = client.audio.translations.create(
 print(translation.text)
 
 
-# 음성 생성
+# # 음성 생성
 speech_file = "speech_output_translations.mp3"
 with client.audio.speech.with_streaming_response.create(
   model="tts-1",
