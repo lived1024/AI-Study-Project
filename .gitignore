@@ -35,8 +35,9 @@ Thumbs.db
 
 API_KEY.txt
 
-# 오디오/비디오 파일
+# 오디오/비디오/이미지 파일
 speech_output*.mp3
+Generated_Image*.png
 
 # Jupyter Notebook
 .ipynb_checkpoints/
