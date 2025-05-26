@@ -33,7 +33,7 @@ instance/
 .DS_Store
 Thumbs.db
 
-API_KEY.txt
+*API_KEY.txt
 
 # 오디오/비디오/이미지 파일
 speech_output*.mp3
