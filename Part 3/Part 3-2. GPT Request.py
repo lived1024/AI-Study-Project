@@ -1,17 +1,9 @@
-import openai
-import os
+import sys
+sys.path.append('..')
+from api_utils import load_openai_api_key
 
-# API_KEY.txt 파일에서 API 키 읽기
-# API_KEY.txt 파일은 현재 작업 디렉토리에 있어야 합니다.
-# 이 코드는 현재 작업 디렉토리로 이동하여 API_KEY.txt 파일을 읽습니다.
-os.chdir(os.path.dirname(__file__))
-with open('API_KEY.txt', 'r') as file:
-    os.environ["OPENAI_API_KEY"] = file.read().strip()
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-
-client = openai.OpenAI()
+# API 키 로드 및 클라이언트 생성
+client = load_openai_api_key()
 
 response = client.responses.create(
   model="gpt-4.1",

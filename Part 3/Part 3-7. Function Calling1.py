@@ -1,16 +1,9 @@
-import os, openai
+import sys
+sys.path.append('..')
+from api_utils import load_openai_api_key
 
-# API_KEY.txt 파일에서 API 키 읽기
-# API_KEY.txt 파일은 현재 작업 디렉토리에 있어야 합니다.
-# 이 코드는 현재 작업 디렉토리로 이동하여 API_KEY.txt 파일을 읽습니다.
-os.chdir(os.path.dirname(__file__))
-with open('API_KEY.txt', 'r') as file:
-    os.environ["OPENAI_API_KEY"] = file.read().strip()
-    
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-
-client = openai.OpenAI()
+# API 키 로드 및 클라이언트 생성
+client = load_openai_api_key()
 
 # ********************** 이전 방식 - 같은 질문으로 여러번 물어볼때마다 답변이 달라짐(생성형 AI의 특성상 답변이 달라짐) **********************
 # content = """다음 문장에서 색깔 정보가 있으면 그것을 추출하여 영어로 번역하고 json 포맷으로 만들어서 한글로 출력해라.
