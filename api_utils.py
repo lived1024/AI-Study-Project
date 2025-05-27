@@ -12,8 +12,8 @@ def load_openai_api_key():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(current_dir)
     
-    # 같은 디렉토리의 OPENAI_API_KEY 파일에서 API 키 읽기
-    with open('OPENAI_API_KEY', 'r') as file:
+    # 같은 디렉토리의 OPENAI_API_KEY.txt 파일에서 API 키 읽기
+    with open('OPENAI_API_KEY.txt', 'r') as file:
         api_key = file.read().strip()
     
     # 환경변수에 설정
