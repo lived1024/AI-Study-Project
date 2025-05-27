@@ -14,7 +14,8 @@ from langchain.chains import RetrievalQA              # 질문 답변 툴
 from langchain_openai import ChatOpenAI               # OpenAI 모델
 from pprint import pprint                             # 아웃풋 프린트 툴
 import sys
-sys.path.append('..')
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from api_utils import load_openai_api_key
 
 # API 키 로드
