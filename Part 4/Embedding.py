@@ -10,7 +10,7 @@ client = load_openai_api_key()
 
 def make_embedding(text):
   
-  return np.array(embedding = client.embeddings.create(
+  return np.array(client.embeddings.create(
     model="text-embedding-ada-002",
     input=text,
     encoding_format="float"
@@ -19,6 +19,11 @@ def make_embedding(text):
 kids_embedding = make_embedding("어린아이")
 children_embedding = make_embedding("어린이")
 
-print(kids_embedding)
+print(len(kids_embedding))
 print('----------------------------------------------------')
-print(children_embedding)
+print(len(children_embedding))
+
+print(type(kids_embedding)) # numpy.ndarray
+
+
+# 유사도 비교
