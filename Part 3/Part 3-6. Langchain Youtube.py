@@ -8,11 +8,11 @@ print(result)
 
 # pip install --upgrade --quiet youtube-transcript-api pytube faiss-cpu tiktoken langchain langchain_openai
 from langchain_community.document_loaders import YoutubeLoader  # 유튜브 로더
-from langchain_openai import OpenAIEmbeddings     # 임베딩 모델
+from langchain_openai import OpenAIEmbeddings                   # 임베딩 모델
 from langchain_community.vectorstores import FAISS              # 벡터 저장소
-from langchain.chains import RetrievalQA              # 질문 답변 툴
-from langchain_openai import ChatOpenAI               # OpenAI 모델
-from pprint import pprint                             # 아웃풋 프린트 툴
+from langchain.chains import RetrievalQA                        # 질문 답변 툴
+from langchain_openai import ChatOpenAI                         # OpenAI 모델
+from pprint import pprint                                       # 아웃풋 프린트 툴
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
