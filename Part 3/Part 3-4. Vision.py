@@ -34,7 +34,7 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode("utf-8")
 
 
-image_path = "./지브리 스타일.png"
+image_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "지브리 스타일.png")
 base64_image = encode_image(image_path)
 
 response = client.responses.create(

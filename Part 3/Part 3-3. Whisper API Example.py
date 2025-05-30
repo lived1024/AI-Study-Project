@@ -7,7 +7,8 @@ from api_utils import load_openai_api_key
 client = load_openai_api_key()
 
 # 음성 추출
-audio_file = open("./김동률 - 다시 사랑한다 말할까.mp3", "rb")
+audio_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "김동률 - 다시 사랑한다 말할까.mp3")
+audio_file = open(audio_file_path, "rb")
 transcription = client.audio.transcriptions.create(
   model="whisper-1", 
   file=audio_file
