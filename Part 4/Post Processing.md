@@ -11,7 +11,7 @@
 - Google은?
 
 ## Groundedness, relevance testing
-- RAGAS library : 
+- RAGAS library
 - 생성
   - Faithfulness : 사실인가?
   - Answer relevancy : 질문과의 관련성
@@ -22,3 +22,12 @@
   - Context relevancy : 필요한 정보만 있는가
   - Context entities recall : 가져온 정보 중 몇개를 썼는가
   - Answer semantic similarity : 답변과 ground truth 유사도
+```json
+{
+  'context_precision': 0.0000, 
+  'faithfulness': 0.0000, 
+  'answer_relevancy': 0.9079, 
+  'context_recall': 0.0000, 
+  'answer_correctness': 0.9729
+}
+```
