@@ -20,3 +20,8 @@ from ipywebrtc import CameraStream, AudioRecorder
 camera = CameraStream(constraints={'audio': True,'video':False})
 recorder = AudioRecorder(stream=camera)
 recorder
+
+
+# 에디터에서는 녹음기 작동 불가 이슈
+# Colab에서 작업 이어감
+# https://colab.research.google.com/drive/19v_e_9IatHZEIZhksa5_Yvy9gXwvdpK7?usp=sharing
