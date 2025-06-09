@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "generateCommitMessage": {
+      "prompt": "Here are the code changes (diff). Please generate a concise and informative commit message in Korean based on these changes. Follow the Conventional Commits specification. The format should be: <타입>: <제목>. For example, 'feat: 로그인 기능 추가' or 'fix: 사용자 프로필 이미지 오류 수정'. The body of the commit message (if necessary) should also be in Korean.\n\nDiff:\n{{diff}}",
+      "enabled": true
+    }
+  }
+}
