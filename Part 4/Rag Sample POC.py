@@ -15,12 +15,11 @@ from api_utils import load_openai_api_key
 client = load_openai_api_key()
 
 # ipywebrtc에서 필요한 클래스들 import
-from ipywebrtc import CameraStream, AudioRecorder
+# from ipywebrtc import CameraStream, AudioRecorder
 
-camera = CameraStream(constraints={'audio': True,'video':False})
-recorder = AudioRecorder(stream=camera)
-recorder
-
+# camera = CameraStream(constraints={'audio': True,'video':False})
+# recorder = AudioRecorder(stream=camera)
+# recorder
 
 # 에디터에서는 녹음기 작동 불가 이슈
 # Colab에서 작업 이어감
