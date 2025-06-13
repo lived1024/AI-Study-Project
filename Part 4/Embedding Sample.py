@@ -1,3 +1,15 @@
+# 이 파일은 OpenAI 임베딩과 GPT-4를 활용해 사용자의 불평(문제)에 대해
+# 판타지 소설 스타일의 해결책을 제안하는 예제입니다.
+# 1. 네 가지 문제 유형(돈이 없다, 회귀, 빙의, 환생)에 대한 임베딩과 해결책을 저장하고,
+# 2. 사용자의 입력을 임베딩 후, 가장 유사한 유형을 찾아 해결책을 선택,
+# 3. GPT-4로 판타지 설정이 담긴 상세 답변을 생성합니다.
+# 간단한 RAG 구조의 AI 스토리 작가 예시입니다.
+
+# 해당 파일 내용은 Rag_Sample.py 파일과 같이 작업이 되어야함.
+# 따라서 Colab 파일 참고
+# https://colab.research.google.com/drive/19v_e_9IatHZEIZhksa5_Yvy9gXwvdpK7?usp=sharing
+
+
 # @title
 from openai import OpenAI
 import json
