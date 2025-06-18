@@ -76,6 +76,12 @@ RAG(Retrieval-Augmented Generation)와 Fine tuning은 LLM을 특정 도메인에
 - ❌ **세부 정보 한계**: 정확한 날짜, 숫자 등 디테일한 정보 부정확할 수 있음
 - ❌ **A/B 테스트 어려움**: 여러 모델 비교 테스트가 복잡함
 
+## RAG와 Fine Tuning의 차이점
+![장점 비교](./RAG%20vs%20Fine%20Tuning.png)
+![단점 비교](./RAG%20vs%20Fine%20Tuning2.png)
+![차이점](./RAG%20vs%20Fine%20Tuning3.png)
+![선택 시 고려사항](./RAG%20vs%20Fine%20Tuning4.png)
+
 
 ## 언제 어떤 방법을 선택할까?
 
@@ -92,6 +98,8 @@ RAG(Retrieval-Augmented Generation)와 Fine tuning은 LLM을 특정 도메인에
 - 🎯 **레이턴시가 중요한 실시간 시스템**
 - 🎯 **오프라인 환경에서 동작해야 하는 경우**
 - 🎯 **높은 품질의 훈련 데이터가 충분한 경우**
+![선택 케이스](./Fine%20Tuning.png)
+![비선택 케이스](./Fine%20Tuning2.png)
 
 ### 하이브리드 접근
 실제 프로덕션에서는 두 방법을 결합하여 사용하는 경우가 많습니다:
