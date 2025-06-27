@@ -32,4 +32,4 @@ def get_openai_api_key():
     Returns:
         str: OpenAI API 키
     """
-    return os.getenv("OPENAI_API_KEY") 
+    return os.getenv("OPENAI_API_KEY")
