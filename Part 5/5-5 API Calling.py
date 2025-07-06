@@ -12,7 +12,7 @@ client = load_openai_api_key()
 # 이미지를 base64로 인코딩하는 함수
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode('utf-8')
+        return base64.b64encode(image_file.read()).decode('utf-8') 
 
 # 이미지 파일 경로 (현재 스크립트와 같은 폴더)
 current_dir = os.path.dirname(os.path.abspath(__file__))
