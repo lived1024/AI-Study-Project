@@ -15,3 +15,11 @@
 2. 새로운 Fine tuning 모델 학습
 3. 결과를 평가 후 다시 1번으로 반복
 4. 학습된 모델 사용
+
+## Fine tuning 순서
+모델 로딩 - 데이터 로딩 - 파라미터 세팅 - 훈련 - 테스트 - 설치
+
+## 샘플 코드
+- [Amazon Sagemaker 샘플 코드](https://colab.research.google.com/drive/1aklCpvTzOG_lwWhPsENh3qHt_Cl2XDX3#scrollTo=3bIogfi8acOK)
+- [DeepLearnging.AI](https://learn.deeplearning.ai/courses/finetuning-large-language-models/lesson/vl60i/training-process)
+- [Unsloth-QLoRA](https://colab.research.google.com/drive/1YkjiVtnpLFV4zZI7c04FeElM4DNYI7hb?usp=sharing)
